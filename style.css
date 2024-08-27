@@ -1,28 +1,88 @@
+/* General styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
-header nav a {
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+nav a {
     color: #fff;
-    padding: 10px;
+    margin: 0 15px;
     text-decoration: none;
-    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
 }
 
+nav a:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
+
+/* Section styling */
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile photo */
+.profile-photo {
+border-radius: 50%;
+max-width: 150px;
+display: block;
+margin: 20px auto;
+}
+
+/* Publications list */
+.publications-list {
+list-style-type: none;
+padding: 0;
+}
+
+.publications-list li {
+background-color: #f4f4f4;
+margin: 10px 0;
+padding: 10px;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+
+.publications-list li:hover {
+background-color: #e9e9e9;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 10px;
+background-color: #333;
+color: #fff;
+position: fixed;
+width: 100%;
+bottom: 0;
 }
