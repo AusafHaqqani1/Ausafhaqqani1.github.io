@@ -8,13 +8,11 @@ body {
     color: #333;
 }
 
-/* Header styling */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
-    box-shadow: 0 4px 2px -2px gray;
 }
 
 header h1 {
@@ -27,62 +25,78 @@ header p {
     font-style: italic;
 }
 
-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
-}
-
-nav a:hover {
-    color: #ddd;
-    transform: scale(1.1);
-}
-
-/* Section styling */
-section {
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 8px;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Profile photo */
+/* Sidebar */
+aside {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
 .profile-photo {
-border-radius: 50%;
-max-width: 150px;
-display: block;
-margin: 20px auto;
+    border-radius: 50%;
+    max-width: 150px;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Publications list */
-.publications-list {
-list-style-type: none;
-padding: 0;
+.links a, .sections a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.publications-list li {
-background-color: #f4f4f4;
-margin: 10px 0;
-padding: 10px;
-border-radius: 4px;
-transition: background-color 0.3s;
+.links a:hover, .sections a:hover {
+    color: #005b99;
 }
 
-.publications-list li:hover {
-background-color: #e9e9e9;
+/* Main content */
+main {
+    flex: 3;
+}
+
+main h2 {
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+}
+
+main p, main ul {
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+main ul li:hover {
+    background-color: #e9e9e9;
 }
 
 /* Footer */
 footer {
-text-align: center;
-padding: 10px;
-background-color: #333;
-color: #fff;
-position: fixed;
-width: 100%;
-bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
 }
